@@ -8,14 +8,23 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
 </head>
 <body>
-    <form id="formularioRegistro" >
-        <input type="text" id="userRegister" placeholder="Nombre">
-        <input type="text" id="dniRegister" placeholder="DNI">
-        <input type="number" id="phoneRegister" placeholder="Telefono">
-        <input type="email" id="mailRegister"  placeholder="Correo Electronico">
-        <input type="password" id="passwordRegister"  placeholder="Contraseña">
-        <input type="submit" value="Registrarse">
-    </form>
+    <div>
+        <h1>Epico Refugio de Animales</h1>
+    </div>
+    <div>
+        <form id="formularioRegistro" >
+            <input type="text" id="userRegister" placeholder="Nombre" required>
+            <input type="text" id="dniRegister" placeholder="DNI" required>
+            <input type="number" id="phoneRegister" placeholder="Telefono" required>
+            <input type="email" id="mailRegister" placeholder="Correo Electronico" required>
+            <input type="password" id="passwordRegister"  placeholder="Contraseña" required>
+            <input type="submit" value="Registrarse" required>
+            <a href="login.html">¿Ya tienes un usuario?Inicia sesion</a>
+        </form>
+    </div>
     <script src='js/register.js'></script>
 </body>
+<footer>
+    SOY UN FOOTER
+</footer>
 </html>
