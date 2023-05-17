@@ -4,23 +4,29 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Refugio de Animales</title>
+    <link rel="icon" type="image/png" href="img/logoPagina.png">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
 </head>
 <body>
     <div>
-        <h1>Epico Refugio de Animales</h1>
+        <center>
+            <a href="index.html"><img id="logoImg" src="img/logoPagina.png" alt="logoPagina"></a>
+        </center>
+        <center>
+            <a href="index.html"><h1 id="logoTitle">Epico Refugio de Animales</h1></a>
+        </center>
     </div>
     <form id="formularioInicio" >
-        <h5>Acceder</h5>
         <input type="text" id="mailLogin" placeholder="Mail">
         <input type="password" id="passwordLogin" placeholder="Contraseña">
-        <input type="submit" value="Ingresar">
-        <a href="register.html">¿No tienes usuario?</a>
+        <input type="submit" id="submitLogin" value="Ingresar">
+        <a href="register.html" id="enlace">¿No tienes usuario? Registrate aqui</a>
      </form>
     <script src='js/login.js'></script>   
 </body>
 <footer>
+    <br>
     SOY UN FOOTER
 </footer>
 </html>

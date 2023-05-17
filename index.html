@@ -4,28 +4,33 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Refugio de Animales</title>
+    <link rel="icon" type="image/png" href="img/logoPagina.png">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
 </head>
 <body>
     <div>
-        <h1>Epico Refugio de Animales</h1>
+        <center>
+            <a href="index.html"><img id="logoImg" src="img/logoPagina.png" alt="logoPagina"></a>
+        </center>
+        <center>
+            <a href="index.html"><h1 id="logoTitle">Epico Refugio de Animales</h1></a>
+        </center>
     </div>
-    <div id="loginRegister">
-        <a href="login.html">Login</a>
-        <br>
-        <a href="register.html">Register</a>
-    </div>
-    <div id="searchBar">
+    <div class="topnav">
+        <div id="loginRegister">
+            <a href="login.html">Iniciar Sesion</a>
+            <a href="register.html">Registrarse</a>
+        </div>
         <a id="profile" href="profile.html">Perfil</a>
-    </div>
-    <div id="logout">
-        <input type="submit" value="Cerrar Sesion">
-    </div>
+        <input id="logout" type="submit" value="Cerrar Sesion">
+        <input id="search" type="text" placeholder="Buscar...">
+      </div>
     <script src='js/index.js'></script>  
     
 </body>
 <footer>
+    <br>
     SOY UN FOOTER
 </footer>
 </html>

@@ -1,0 +1,141 @@
+*{
+    color: #000000;
+    background-color: #f1f1f1;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+#logoImg{
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+
+#logoTitle{
+    display: inline;
+    padding: 10px;
+}
+
+/* Estilos formularios */
+#userRegister, #dniRegister, #phoneRegister, #mailRegister, #passwordRegister, #mailLogin, #passwordLogin {
+    width: 97%;
+    padding: 15px;
+    text-align: center;
+    margin: 5px 5px 20px 5px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+#userRegister:focus, #dniRegister:focus, #phoneRegister:focus, #mailRegister:focus, #passwordRegister:focus, #mailLogin:focus, #passwordLogin:focus {
+    text-align: center;
+    display: inline-block;
+    border: none;
+    background-color: #ddd;
+    outline: none;
+  }
+/* FIN Estilos formularios */
+
+#logout {
+    float: left;
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: 17px;
+    border: 0;
+}
+
+/* Estilos botones */
+#submitRegister, #submitLogin {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    display: grid;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+  }
+/* FIN Estilos botones */
+
+#enlace{
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    display: grid;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+}
+
+/* Estilo footer*/
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin-top: auto ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#list{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+/* Ocultar Barra */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Add a black background color to the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover, #logout:hover {
+    background-color: rgba(221, 221, 221, 0.500);
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Style the search box inside the navigation bar */
+  .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
