@@ -19,10 +19,15 @@
     </style>
 </head>
 <body>
-    <div>
-        <a href="index.html"><img id="logoImg" src="img/logoPagina.png" alt="logoPagina"></a>
-        <a href="index.html"><h1 id="logoTitle">Epico Refugio de Animales</h1></a>
+    <div id="logoContainer">
+        <center>
+            <a href="index.html"><img id="logoImg" src="img/logoPagina.png" alt="logoPagina"></a>
+        </center>
+        <center>
+            <a href="index.html"><h1 id="logoTitle">Epico Refugio de Animales</h1></a>
+        </center>
     </div>
+    <br>
     <div>
         <form id="formularioRegistro" >
             <input type="text" id="userRegister" placeholder="Nombre" required>
@@ -30,7 +35,7 @@
             <input type="number" id="phoneRegister" placeholder="Telefono" required>
             <input type="email" id="mailRegister" placeholder="Correo Electronico" required>
             <input type="password" id="passwordRegister"  placeholder="Contraseña" required>
-            <input type="submit" value="Registrarse" required>
+            <input type="submit" id="submitRegister" value="Registrarse" required>
             <a href="login.html" id="enlace">¿Ya tienes un usuario? Inicia sesion</a>
         </form>
     </div>
