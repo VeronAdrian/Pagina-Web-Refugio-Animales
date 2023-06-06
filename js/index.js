@@ -1,3 +1,4 @@
+
 const user = JSON.parse(localStorage.getItem('login_success')) || false
 
 if(user){
@@ -12,5 +13,4 @@ else{
 const logout = document.getElementById('logout')
 logout.addEventListener('click', (e)=>{
     localStorage.removeItem('login_success')
-    return window.location="index.html"
-})
+    return window.location="index.html"})
