@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Inscripcion de Organizaciones</title>
+    <link rel="icon" type="image/png" href="img/logoPagina.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/logoPagina.png">
+    <script src="jquery-3.6.4.min.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src="js/inscripcionOrganizaciones.js"></script>
+</head>
+
+<body>
+    <div>
+        <center>
+            <a href="index.html"><img id="logoImg" src="img/logoPagina.png" alt="logoPagina"></a>
+        </center>
+        <center>
+            <a href="index.html"><h1 id="logoTitle">Epico Refugio de Animales</h1></a>
+        </center>
+    </div>
+    <h1>Complete los campos para la inscripcion de la Organización</h1>
+    <div class="contenedor">
+        <article id="campoTexto">
+            <p>Nombre <input type="text" id="nombreOrga" name="nombreOrga" required minlength="4"></p>
+            <p>telefono <input type="number" id="telOrganizacion" name="telOrganizacion" required minlength="10"></p>
+            <p>Descripcion <textarea name="descrpOrganizacion" id="descrpOrganizacion" cols="30" rows="10" required
+                    minlength="10"></textarea>
+            <p>Direccion <input type="text" name="dirOrga" id="dirOrga"></p>
+            </p>
+        </article>
+        <button id="botonEnviar"> Enviar</button>
+    </div>
+
+    <div class="fondoSelect" id="fondoSelect" style="display:none">
+        <div class="contenedorSelect" id="contenedorSelect" style="display: none">
+            <p>Para continuar con la inscripcion seleccione en que partido se encuentra el instituto </p>
+            <select name="direcciones" id="direcciones" class="direcciones"> </select>
+            <button id="botonConfirmar"> Confirmar </button>
+            <button id="botonCancel"> Cancel </button>
+        </div>
+    </div>
+
+</body>
+<footer>
+    <div id="list">
+        Juan María Gutiérrez 1150 (entre José León Suarez y Verdi)
+        <br>
+        Los Polvorines | CP 1613 | Pcia de Bs. As | Argentina
+        <br>
+        Telefono: 1234-4567 - CP 1613
+    </div>
+</footer>
+</html>

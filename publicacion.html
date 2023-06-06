@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Realizar Publicacion de Mascota</title>
+    <link rel="icon" type="image/png" href="img/logoPagina.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+</head>
+<body>
+    <div>
+        <center>
+            <a href="index.html"><img id="logoImg" src="img/logoPagina.png" alt="logoPagina"></a>
+        </center>
+        <center>
+            <a href="index.html"><h1 id="logoTitle">Epico Refugio de Animales</h1></a>
+        </center>
+    </div>
+    <h2>Bienvenido al sistema de publicar avisos</h2>
+    <form id="Formulario" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="animal">
+        </div>
+
+        <div class="form-group">
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" name="edad">
+        </div>
+
+        <div class="form-group">
+            <label for="comentario">Descripción</label>
+            <textarea name="comentario" id="campo_comentario" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="imagen">Imagen</label>
+            <input type="file" id="imagen" name="imagen">
+        </div>
+
+        <div class="form-group">
+            <div class="checkbox-container">
+                <input type="checkbox" id="perdido" name="estado" value="perdido">
+                <span class="checkmark"></span>
+                <label for="perdido">Perdido</label>
+            </div>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="adopcion" name="estado" value="adopcion">
+                <span class="checkmark"></span>
+                <label for="adopcion">Adopción</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button type="button" onclick="validarFormulario()">Enviar</button>
+        </div>
+    </form>
+
+    <script src="js/PublicarAviso.js"></script>
+</body>
+</html>
