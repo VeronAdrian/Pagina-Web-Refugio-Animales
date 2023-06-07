@@ -1,0 +1,36 @@
+.contenedor {
+    text-align: center;
+    position: relative;
+}
+
+.fondoSelect{
+  position: fixed; /* si scrollea se mantenga el fondo */
+  padding-top: 100px; 
+  left: 0;
+  top: 0; /* posicion */
+  width: 100%;  /* ocupe toda la pantalla */
+  height: 100%; /*  ocupe toda la pantalla*/
+  background-color: rgba(0,0,0,0.4);  /* color de fondo opaco */
+}
+
+
+.contenedorSelect {
+background-color: white; /* color de fondo del contenedor */
+margin: auto; /* crea espacio fuera del elemento */
+padding: 30px; /*  crea espacio alrededor de un elemento dentro del propio elemento*/  
+border: 2px solid black; /* borde en el div*/
+width: 80%; 
+ 
+}
+
+#contenedor {
+    position: relative;
+}
+
+#campoTexto {
+    text-align: center;
+}
+
+.modal-show {
+    display: block;
+}

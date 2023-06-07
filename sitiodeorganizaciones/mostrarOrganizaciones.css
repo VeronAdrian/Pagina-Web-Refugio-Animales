@@ -1,0 +1,50 @@
+#cajadeOrgas{
+    margin-top:50px;
+    float: right;
+}
+
+
+
+article{
+    
+    
+    border-style: ridge;
+    padding-left: 100px;
+    padding-right: 800px;
+    
+}
+
+
+
+#map{
+    position: absolute;
+  bottom: 80px;
+  left: 10;
+  width: 400px;
+  height: 300px;
+  
+    
+}
+
+
+.contenedor{
+    display: flex;
+    
+}
+
+#filtros{
+    text-align: center;
+    margin-left: 400px;
+    margin-top: 50px;
+    float: left;
+}
+
+
+#titulo{
+    text-align: center;
+    background-color: orange;
+}
+
+#subtituloFiltros{
+    background-color: orange;
+}
