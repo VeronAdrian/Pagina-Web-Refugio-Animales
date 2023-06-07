@@ -122,20 +122,21 @@ footer {
     text-decoration: none;
     font-size: 17px;
   }
+
+  #loginRegister {
+    float: right;
+  }
   
   /* Change the color of links on hover */
-  .topnav a:hover, #logout:hover {
+  .topnav a:hover, #logout:hover, #loginRegister {
     background-color: rgba(221, 221, 221, 0.500);
     color: white;
     cursor: pointer;
   }
-  
-  /* Style the search box inside the navigation bar */
-  .topnav input[type=text] {
-    float: right;
-    padding: 6px;
-    border: none;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
+
+  /* Stilo de las publicaciones*/
+  .articulo {
+    margin: 20px;
+    border-color: #000000;
+    border-style: solid;
   }

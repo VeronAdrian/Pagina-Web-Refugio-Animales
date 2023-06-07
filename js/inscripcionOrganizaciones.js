@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     let botonConfirmar = document.getElementById("botonConfirmar");
     let botonCancel = document.getElementById("botonCancel");
