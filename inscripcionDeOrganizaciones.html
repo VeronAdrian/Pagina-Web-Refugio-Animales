@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Inscripcion de Organizaciones</title>
-    <link rel="icon" type="image/png" href="img/logoPagina.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="img/logoPagina.png">
-    <script src="jquery-3.6.4.min.js"></script>
+    <title>Document</title>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="css/Inscrip_OrganzacionStyle.css">
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
     <script src="js/inscripcionOrganizaciones.js"></script>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/Inscrip_OrganzacionStyle.css'>
+   
 </head>
 
 <body>
@@ -23,7 +23,7 @@
             <a href="index.html"><h1 id="logoTitle">Epico Refugio de Animales</h1></a>
         </center>
     </div>
-    <h2>Complete los campos para la inscripcion de la Organización</h2>
+    <h1>Complete los campos para la inscripcion de la Organización</h1>
     <div class="contenedor">
         <article id="campoTexto">
             <p>Nombre <input type="text" id="nombreOrga" name="nombreOrga" required minlength="4"></p>
@@ -33,19 +33,31 @@
             <p>Direccion <input type="text" name="dirOrga" id="dirOrga"></p>
             </p>
         </article>
-        <button id="botonEnviar"> Enviar</button>
-    </div>
-
-    <div class="fondoSelect" id="fondoSelect" style="display:none">
-        <div class="contenedorSelect" id="contenedorSelect" style="display: none">
+        <br>
+        <select name="actividades" id="actividades" class="actividades"> 
+            <option value="ninguna" selected >ninguna</option>
+            <option value="veterinaria" >veterinaria</option>
+            <option value="Forrajeria">Forrajeria</option>
+        </select>
+        <br>
+        <button id="botonVerificar"> Verificar</button>
+        <div id="enviar" style="display: none;"><button id="botonEnviar"> enviar</button></div>
+        <div class="contenedorSelect" id="contenedorSelect" style="display: none" >
             <p>Para continuar con la inscripcion seleccione en que partido se encuentra el instituto </p>
             <select name="direcciones" id="direcciones" class="direcciones"> </select>
             <button id="botonConfirmar"> Confirmar </button>
             <button id="botonCancel"> Cancel </button>
+           
         </div>
+    
     </div>
-    <br>
+    
+    </div>
+    <div id="map" style="display: none;">
+    </div>
+
 </body>
+<br>
 <footer>
     <div id="list">
         Juan María Gutiérrez 1150 (entre José León Suarez y Verdi)
@@ -55,4 +67,5 @@
         Telefono: 1234-4567 - CP 1613
     </div>
 </footer>
+
 </html>

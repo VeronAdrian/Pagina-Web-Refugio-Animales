@@ -1,13 +1,12 @@
 function validarFormulario() {
     var nombre = document.getElementById("nombre").value;
     var edad = document.getElementById("edad").value;
-    var comentario = document.getElementById("campo_comentario").value;
+    var especie = document.getElementById("especie").value;
+    var comentario = document.getElementById("comentario").value;
     var imagenInput = document.getElementById("imagen");
 
-    var imagen = imagenInput.value;
     var estado = "";
 
-    // Verificar el estado seleccionado
     var perdidoCheckbox = document.getElementById("perdido");
     var adopcionCheckbox = document.getElementById("adopcion");
 
@@ -17,23 +16,27 @@ function validarFormulario() {
         estado = "Adopción";
     }
 
-    var datos = {
-        nombre: nombre,
-        edad: edad,
-        imagen: imagen,
-        comentario: comentario,
-        estado: estado,
-    };
-
-    // Lee la imagen seleccionada y conviértela en una cadena de texto
     var fileReader = new FileReader();
     fileReader.onload = function(event) {
-        datos.imagen = event.target.result;
+        var imagen = event.target.result;
 
-        // Guarda los datos en el LocalStorage
+        var datos = {
+            nombre: nombre,
+            edad: edad,
+            especie: especie,
+            imagen: imagen,
+            comentario: comentario,
+            estado: estado,
+        };
+
         localStorage.setItem("datosFormulario", JSON.stringify(datos));
 
         alert("Los datos se han almacenado correctamente.");
     };
-    fileReader.readAsDataURL(imagenInput.files[0]);
+
+    if (imagenInput.files && imagenInput.files[0]) {
+        fileReader.readAsDataURL(imagenInput.files[0]);
+    } else {
+        alert("Selecciona una imagen válida.");
+    }
 }

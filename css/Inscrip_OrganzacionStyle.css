@@ -1,23 +1,6 @@
-h2{
-    font-size: larger;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
 .contenedor {
     text-align: center;
     position: relative;
-}
-
-.fondoSelect{
-  position: fixed; /* si scrollea se mantenga el fondo */
-  padding-top: 100px; 
-  left: 0;
-  top: 0; /* posicion */
-  width: 100%;  /* ocupe toda la pantalla */
-  height: 100%; /*  ocupe toda la pantalla*/
-  background-color: rgba(0,0,0,0.4);  /* color de fondo opaco */
 }
 
 
@@ -26,7 +9,7 @@ background-color: white; /* color de fondo del contenedor */
 margin: auto; /* crea espacio fuera del elemento */
 padding: 30px; /*  crea espacio alrededor de un elemento dentro del propio elemento*/  
 border: 2px solid black; /* borde en el div*/
-width: 80%; 
+width: 50%; 
  
 }
 
@@ -40,4 +23,36 @@ width: 80%;
 
 .modal-show {
     display: block;
+}
+
+
+#indice{
+    background-color: rgb(249, 175, 39) ;  
+    width: 100%;
+    text-align: center;
+}
+
+.enlace{
+    margin: 10%;
+    font-size: 20px;
+}
+
+
+#map{
+    position: absolute;
+  bottom: 80px;
+  left: 10;
+  width: 400px;
+  height: 300px;
+  
+    
+}
+
+#botonVerificar{
+    margin-top:10px ;
+}
+
+
+#enviar{
+    margin-top: 10px;
 }

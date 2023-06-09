@@ -1,11 +1,5 @@
-body{
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0px;
-}
 
-h2{
-    font-size: larger;
+h1{
     display: flex;
     justify-content: center;
     text-align: center;
@@ -112,16 +106,6 @@ form {
     font-size: 16px;
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
-}
-
-input[type=number] { 
-    -moz-appearance:textfield; 
-}
-
 .form-group input[type="file"] {
     margin-top: 10px;
 }
@@ -130,6 +114,13 @@ input[type=number] {
     margin-top: 10px;
 }
 
-textarea{
-    resize: none;
+.form-group button[type="button"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
+

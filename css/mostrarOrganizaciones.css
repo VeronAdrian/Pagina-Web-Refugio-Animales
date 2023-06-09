@@ -1,4 +1,78 @@
+#cajadeOrgas{
+    
+    float: right;
+}
+
+
+
+article{
+    
+    border-style: ridge;
+    padding-left: 10px;
+    
+}
+
+
+
 #map{
-    width: 400px;
-    height: 300px;
+    position: absolute;
+  bottom: 80px;
+  left: 10;
+  width: 400px;
+  height: 300px;
+  
+    
+}
+
+
+.contenedor{
+    display: flex;
+    margin-top: 20px;
+}
+
+#filtros{
+    left: 0;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 400px;
+    margin-top: 50px;
+    float: left;
+    border-style: ridge;
+    width:500px;
+}
+
+
+
+
+#titulo{
+    top : 0;
+    left: 0;
+    background-color: rgb(249, 175, 39) ;
+    text-align: center;
+}
+#subtitulo{
+    text-align: center;
+}
+
+.filtro{
+    border-radius: 8px;
+    padding: 8px 16px;
+    background-color: grey;
+    color: white;
+    border: none;
+}
+
+
+
+.filtro:focus{
+    background-color: rgb(249, 175, 39) ;
+}
+.enlace{
+    margin: 10%;
+    font-size: 20px;
+}
+
+#indice{
+    background-color: rgb(249, 175, 39) ;  
+    width: 100%;
 }

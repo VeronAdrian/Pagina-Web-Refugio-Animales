@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="img/logoPagina.png">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/editorAvisos.css'>
 </head>
 <body>
     <div>
@@ -31,62 +32,37 @@
         </div>
       </div>
     <script src='js/index.js'></script>  
-    <div class ="contenedor">
-        <article class="articulo"><img class="image" src="img/patan.jpg" width="200" height="200" alt="perro ciego">
-            <h3>Perdido</h3>
-            <p>Nombre: Patan </p>
-            <p>Edad: 16 años</p>
-            <p>Caracteristicas: pelaje negro y marron <br> canas en la cara debido 
-            a la edad avanzado, el ojo derecho semi-blanco <br> no camina bien del todo</p>
-        </article>
-        <article class="articulo"><img class="image" class="image" src="img/momo.jpg" width="200" height="200" alt="perro ciego">
-            <h3>Perdido</h3>
-            <p>Nombre: Momo </p>
-            <p>Edad: 4 años</p>
-            <p>Caracteristicas: perro salchicha de pelaje marron, canitas  en el hocico, miedoso</p>
-        </article>
-        <article class="articulo"><img class="image" src="img/patan.jpg" width="200" height="200" alt="perro ciego">
-            <h3>Perdido</h3>
-            <p>Nombre: Patan </p>
-            <p>Edad: 16 años</p>
-            <p>Caracteristicas: pelaje negro y marron <br> canas en la cara debido 
-            a la edad avanzado, el ojo derecho semi-blanco <br> no camina bien del todo</p>
-        </article>
-        <article class="articulo"><img class="image" src="img/momo.jpg" width="200" height="200" alt="perro ciego">
-            <h3>Perdido</h3>
-            <p>Nombre: Momo </p>
-            <p>Edad: 4 años</p>
-            <p>Caracteristicas: perro salchicha de pelaje marron, canitas  en el hocico, miedoso</p>
-        </article>
+    <div class="contenedor">
+        <h1>Página de Avisos</h1>
+
+        <form id="formularioAvisos">
+            <div>
+                <label for="especieAnimal">Especie del animal:</label>
+                <input type="text" id="especieAnimal">
+            </div>
+            <div>
+                <input type="checkbox" id="adopcionCheckbox">
+                <label for="adopcionCheckbox">En adopción</label>
+            </div>
+            <div>
+                <input type="checkbox" id="perdidoCheckbox">
+                <label for="perdidoCheckbox">Perdido</label>
+            </div>
+            <div>
+                <input type="checkbox" id="ambosCheckbox">
+                <label for="ambosCheckbox">Ambos</label>
+            </div>
+            <div>
+                <button type="submit">Buscar</button>
+            </div>
+        </form>
+
+        <div class="resultado" id="resultado">
+        </div>
+        <script src="js/jquery-3.6.4.min.js"></script>
+        <script src="js/avisos.js"></script>
     </div>
-    <div class ="contenedor">
-        <article class="articulo"><img class="image" src="img/patan.jpg" width="200" height="200" alt="perro ciego">
-            <h3>Perdido</h3>
-            <p>Nombre: Patan </p>
-            <p>Edad: 16 años</p>
-            <p>Caracteristicas: pelaje negro y marron <br> canas en la cara debido 
-            a la edad avanzado, el ojo derecho semi-blanco <br> no camina bien del todo</p>
-        </article>
-        <article class="articulo"><img class="image" src="img/momo.jpg" width="200" height="200" alt="perro ciego">
-            <h3>Perdido</h3>
-            <p>Nombre: Momo </p>
-            <p>Edad: 4 años</p>
-            <p>Caracteristicas: perro salchicha de pelaje marron, canitas  en el hocico, miedoso</p>
-        </article>
-        <article class="articulo"><img class="image" src="img/patan.jpg" width="200" height="200" alt="perro ciego">
-            <h3>Perdido</h3>
-            <p>Nombre: Patan </p>
-            <p>Edad: 16 años</p>
-            <p>Caracteristicas: pelaje negro y marron <br> canas en la cara debido 
-            a la edad avanzado, el ojo derecho semi-blanco <br> no camina bien del todo</p>
-        </article>
-        <article class="articulo"><img class="image" src="img/momo.jpg" width="200" height="200" alt="perro ciego">
-            <h3>Perdido</h3>
-            <p>Nombre: Momo </p>
-            <p>Edad: 4 años</p>
-            <p>Caracteristicas: perro salchicha de pelaje marron, canitas  en el hocico, miedoso</p>
-        </article>
-    </div>
+    
 </body>
 <footer>
     <div id="list">
