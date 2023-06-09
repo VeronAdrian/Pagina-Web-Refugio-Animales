@@ -8,6 +8,7 @@ if(user){
 else{
     document.getElementById('logout').style.display = 'none'
     document.getElementById('profile').style.display = 'none'
+    document.getElementById('publish').style.display = 'none'
 }
 
 const logout = document.getElementById('logout')

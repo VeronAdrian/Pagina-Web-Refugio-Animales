@@ -1,18 +1,18 @@
 *{
     color: #000000;
-    background-color: #f1f1f1;
     text-decoration: none;
     margin: 0px;
     padding: 0px;
     font-family: 'Times New Roman', Times, serif;
+    font-size: large;
 }
 
 body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background: rgb(255, 255, 255);
 }
-
 
 #logoImg{
     width: 100px;
@@ -21,6 +21,7 @@ body{
 }
 
 #logoTitle{
+    font-size: xx-large;
     display: inline;
     padding: 10px;
 }
@@ -58,7 +59,7 @@ body{
 }
 
 /* Estilos botones */
-#submitRegister, #submitLogin {
+#submitRegister, #submitLogin, #submit, #botonEnviar {
     background-color: black;
     color: white;
     padding: 20px;
@@ -134,9 +135,65 @@ footer {
     cursor: pointer;
   }
 
+  .contenedor {
+    display: table; /* Make the container element behave like a table */
+    width: 100%; /* Set full-width to expand the whole page */
+  }
+
   /* Stilo de las publicaciones*/
   .articulo {
     margin: 20px;
-    border-color: #000000;
+    border-color: rgb(80, 80, 80);
+    background-color: #cccccc;
+    border-style: double;
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  #profileData{
+    margin: 20px;
+  }
+
+  h2, h3, p {
+    margin: 20px;
+  }
+
+  #inscriptionOrg{
+    margin: 20px;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 50%;
     border-style: solid;
   }
+
+  .imageTextLeft {
+    width: 100px;
+    height: 100px;
+    vertical-align: text-top;
+    display: flex;
+    margin-left: 45px;
+  }
+
+  .imageTextRight {
+    width: 100px;
+    height: 100px;
+    vertical-align: text-top;
+    display: flex;
+    margin-right: 45px;
+  }
+
+  .displayText {
+    text-indent: 10px;
+    display: flex;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  
