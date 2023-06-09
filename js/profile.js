@@ -12,6 +12,5 @@ function tipoUsuario(user){
     }
     if(user.particular){
         return "Particular"
-    }
-    
+    }  
 }

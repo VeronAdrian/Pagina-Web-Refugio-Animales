@@ -1,4 +1,4 @@
-.contenedor {
+.contenedor, h1 {
     text-align: center;
     position: relative;
 }
@@ -11,6 +11,14 @@ padding: 30px; /*  crea espacio alrededor de un elemento dentro del propio eleme
 border: 2px solid black; /* borde en el div*/
 width: 50%; 
  
+}
+
+#descrpOrganizacion{
+    vertical-align: text-top;
+}
+
+.actividades{
+    margin: 20px;
 }
 
 #contenedor {
@@ -39,12 +47,10 @@ width: 50%;
 
 
 #map{
-    position: absolute;
-  bottom: 80px;
-  left: 10;
-  width: 400px;
-  height: 300px;
-  
+    border-style: solid;
+    position: flex;
+    width: 500px;
+    height: 500px;
     
 }
 

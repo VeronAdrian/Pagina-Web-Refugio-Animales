@@ -5,7 +5,7 @@ $(document).ready(function () {
     let botonForrajeria = document.getElementById("filtro2");
     let botonSacarFiltro = document.getElementById("sinFiltro");
     var contenedor = document.getElementById("cajadeOrgas");
-    var map = L.map('map').setView([51.505, -0.09], 13);
+    var map = L.map('map').setView([-34.522151, -58.700609], 15);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
@@ -32,7 +32,6 @@ $(document).ready(function () {
 function armarContendor(contenedor, map, organizaciones) {
 
     for (let i = 0; i < organizaciones.length; i++) {
-        console.log(organizaciones);
         let segmentoOrga = document.createElement("article");
         let liNombre = document.createElement("li");
         let liNrotel = document.createElement("li");
@@ -48,7 +47,7 @@ function armarContendor(contenedor, map, organizaciones) {
             let divMapa = document.getElementById("map");
             divMapa.style.display="block";
             map.invalidateSize();
-            map.setView([organizaciones[i].x, organizaciones[i].y], 8);
+            map.setView([organizaciones[i].x, organizaciones[i].y], 15);
             L.marker([organizaciones[i].x, organizaciones[i].y]).addTo(map);
         }, false);
         

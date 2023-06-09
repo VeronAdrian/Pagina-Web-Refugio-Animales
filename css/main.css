@@ -59,7 +59,7 @@ body{
 }
 
 /* Estilos botones */
-#submitRegister, #submitLogin, #submit, #botonEnviar {
+#submitRegister, #submitLogin, #submit, #botonEnviar, #botonVerificar {
     background-color: black;
     color: white;
     padding: 20px;
@@ -196,4 +196,6 @@ footer {
     text-justify: inter-word;
   }
 
-  
+  textarea {
+    resize: none;
+  }

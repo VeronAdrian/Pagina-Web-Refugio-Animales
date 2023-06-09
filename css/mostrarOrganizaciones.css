@@ -1,33 +1,27 @@
 #cajadeOrgas{
-    
     float: right;
+    
 }
-
-
 
 article{
-    
     border-style: ridge;
     padding-left: 10px;
-    
 }
-
-
 
 #map{
-    position: absolute;
-  bottom: 80px;
-  left: 10;
-  width: 400px;
-  height: 300px;
-  
-    
+    border-style: solid;
+    position: flex;
+    width: 500px;
+    height: 500px;
 }
 
+h2{
+    text-align: center;
+}
 
 .contenedor{
     display: flex;
-    margin-top: 20px;
+    margin: 30px;
 }
 
 #filtros{
@@ -40,9 +34,6 @@ article{
     border-style: ridge;
     width:500px;
 }
-
-
-
 
 #titulo{
     top : 0;
@@ -61,8 +52,6 @@ article{
     color: white;
     border: none;
 }
-
-
 
 .filtro:focus{
     background-color: rgb(249, 175, 39) ;

@@ -189,5 +189,17 @@ function crearAvisos(Avisos) {
   var formularioAvisos = document.getElementById("formularioAvisos");
   formularioAvisos.addEventListener("submit", buscarAviso);
 
+  $("input:checkbox").on('click', function() {
+    // in the handler, 'this' refers to the box clicked on
+    checkedOnClick(this)
+  });
 
+  function checkedOnClick(el){
 
+    // Select all checkboxes by class
+    var checkboxesList = document.getElementsByClassName("checkoption");
+    for (var i = 0; i < checkboxesList.length; i++) {
+       checkboxesList.item(i).checked = false; // Uncheck all checkboxes
+    }
+    el.checked = true; // Checked clicked checkbox
+ }

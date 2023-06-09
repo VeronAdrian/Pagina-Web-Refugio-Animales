@@ -2,7 +2,10 @@
 <html lang="en">
 
 <head>
-    <title>Document</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Inscripcion de Organizacion</title>
+    <link rel="icon" type="image/png" href="img/logoPagina.png">
     <script src="js/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="css/Inscrip_OrganzacionStyle.css">
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
@@ -27,7 +30,7 @@
     <div class="contenedor">
         <article id="campoTexto">
             <p>Nombre <input type="text" id="nombreOrga" name="nombreOrga" required minlength="4"></p>
-            <p>telefono <input type="number" id="telOrganizacion" name="telOrganizacion" required minlength="10"></p>
+            <p>Telefono <input type="number" id="telOrganizacion" name="telOrganizacion" required minlength="10"></p>
             <p>Descripcion <textarea name="descrpOrganizacion" id="descrpOrganizacion" cols="30" rows="10" required
                     minlength="10"></textarea>
             <p>Direccion <input type="text" name="dirOrga" id="dirOrga"></p>
@@ -35,8 +38,8 @@
         </article>
         <br>
         <select name="actividades" id="actividades" class="actividades"> 
-            <option value="ninguna" selected >ninguna</option>
-            <option value="veterinaria" >veterinaria</option>
+            <option value="ninguna" selected >Ninguna</option>
+            <option value="veterinaria" >Veterinaria</option>
             <option value="Forrajeria">Forrajeria</option>
         </select>
         <br>
@@ -51,9 +54,11 @@
         </div>
     
     </div>
-    
+    <br>
     </div>
-    <div id="map" style="display: none;">
+        <center>
+            <div id="map"></div>
+        </center>
     </div>
 
 </body>

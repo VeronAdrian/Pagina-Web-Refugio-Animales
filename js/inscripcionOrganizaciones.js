@@ -6,7 +6,7 @@ $(document).ready(function () {
     let botonVerificar = document.getElementById("botonVerificar");
     let botonEnviar = document.getElementById("botonEnviar");
     let organizacionesLS = JSON.parse(window.localStorage.getItem("organizaciones")) || [];
-    var map = L.map('map').setView([51.505, -0.09], 13);
+    var map = L.map('map').setView([-34.522151, -58.700609], 15);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
@@ -180,6 +180,7 @@ function mostrarMapa(map, normalizarURL) {
     map.invalidateSize();
     map.setView([organizacion.direccionesNormalizadas[0].coordenadas.y, organizacion.direccionesNormalizadas[0].coordenadas.x], 8);
     L.marker([organizacion.direccionesNormalizadas[0].coordenadas.y, organizacion.direccionesNormalizadas[0].coordenadas.x]).addTo(map);
+    
 }
 
 function mostrarEnviar() {
