@@ -33,7 +33,7 @@ function crearAvisos(Avisos) {
   let aviso1 = new Aviso(imagen, especie, nombre, edad, descripcion, estado);
   Avisos.push(aviso1);
 
-  let imagen2 = "img/conejo.jpg";
+  let imagen2 = "img/tremendoPebete.jpg";
   let especie2 = "conejo";
   let nombre2 = "patan";
   let edad2 = "3";
@@ -127,6 +127,7 @@ function crearAvisos(Avisos) {
     resultado.innerHTML = "";
   
     for (let i = 0; i < Avisos.length; i++) {
+
         let aviso = Avisos[i];
   
         if (
